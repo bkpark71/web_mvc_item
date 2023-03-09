@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
 <div><h1>상품 등록</h1></div>
-<form method="post" action="item.html">
+<form action="/basic/add" method="post">
     <div>
         <label for="itemName">상품명</label>
         <input type="text" id="itemName" name="itemName" placeholder="상품명을 입력해주세요"></input>
@@ -20,7 +20,8 @@
         <input type="text" id="quantity" name="quantity" placeholder="상품의 수량을 입력해주세요"></input>
     </div>
     <div>
-        <button type="submit">등록</button> <button type="button">취소</button>
+        <button type="submit">등록</button>
+        <button type="button" th:onclick="|location.href='@{/basic/items}'|">취소</button>
     </div>
 </form>
 </body>

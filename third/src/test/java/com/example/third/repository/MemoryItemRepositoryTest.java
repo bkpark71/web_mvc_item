@@ -1,16 +1,12 @@
 package com.example.third.repository;
 
 import com.example.third.domain.Item;
-import com.example.third.domain.ItemDTO;
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
-import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.*;
 
 class MemoryItemRepositoryTest {
     MemoryItemRepository itemRepository = new MemoryItemRepository();

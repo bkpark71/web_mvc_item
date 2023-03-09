@@ -1,7 +1,6 @@
 package com.example.third.repository;
 
 import com.example.third.domain.Item;
-import com.example.third.domain.ItemDTO;
 
 import java.util.*;
 
